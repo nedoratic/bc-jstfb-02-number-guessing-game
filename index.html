@@ -17,5 +17,16 @@
 		<!-- JS -->
 		<script defer src="./index.js"></script>
 	</head>
-	<body></body>
+	<body>
+		<div class="app">
+			<h1 class="app__title">Number Guessing Game</h1>
+			<p class="app__description">App algorithm has generated a random number between 1 and 100. Try to guess it in 10 turns or fewer. The app will tell you if your guess was too high or too low.</p>
+			<div class="app__input">
+				<label class="app__input__label" for="app__input__field">Enter your guess</label>
+				<input class="app__input__field" id="app__input__field" type="number" />
+				<button class="app__input__button">Submit your guess</button>
+			</div>
+			<div class="app__output"></div>
+		</div>
+	</body>
 </html>
