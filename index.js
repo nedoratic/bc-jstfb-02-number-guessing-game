@@ -56,5 +56,12 @@ const handleGuess = () => {
 // Event listener for button click
 appButton.addEventListener('click', handleGuess);
 
+// Event listener for pressing Enter key
+appInput.addEventListener('keypress', (event) => {
+	if (event.key === 'Enter') {
+		handleGuess();
+	}
+});
+
 // Initialize the game
 answer = generateRandomNumber();
