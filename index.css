@@ -56,6 +56,7 @@ body {
 .app__title,
 .app__description,
 .app__input,
+.app__input__label,
 .app__output {
 	text-align: center;
 	margin-bottom: 2rem;
@@ -68,11 +69,16 @@ body {
 	align-items: center;
 }
 
+.app__input__label,
 .app__input__field,
 .app__input__button {
 	font-weight: 600;
 	width: 210px;
 	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.app__input__label {
 	margin-bottom: 2rem;
 }
 
@@ -118,13 +124,15 @@ body {
 	}
 	.app__description {
 		width: 550px;
-		margin-bottom: 1rem;
+		margin-bottom: 0.5rem;
 	}
+	.app__input__label,
 	.app__input__field,
 	.app__input__button {
-		margin-bottom: 1rem;
+		margin-bottom: 0.5rem;
 	}
 	.app__description,
+	.app__input__label,
 	.app__input__field,
 	.app__input__button,
 	.app__output {
