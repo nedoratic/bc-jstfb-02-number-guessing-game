@@ -33,7 +33,7 @@ const compareGuessToAnswer = (guess) => {
 	} else if (guess > answer) {
 		return `${guess} is too high. Try again.`;
 	} else {
-		return `Congratulations! The answer was ${answer}. You guessed the number in ${attempts} attempts.`;
+		return `Congratulations! The answer was ${answer}. You guessed the number in ${attempts} attempts. Refresh the page to play again.`;
 	}
 };
 
