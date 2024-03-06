@@ -17,12 +17,13 @@ const generateRandomNumber = () => {
 
 // Validate guess
 const validateGuess = (guess) => {
+	guess = String(guess);
 	if (isNaN(guess) || guess.trim() === '') {
 		return 'Please enter a valid number.';
 	} else if (guess < minNum || guess > maxNum) {
 		return `Please enter a number between ${minNum} and ${maxNum}.`;
 	}
-	return null; // Indicates no validation errors
+	return null;
 };
 
 // Compare guess to answer
@@ -48,8 +49,8 @@ const handleGuess = () => {
 		const resultMessage = compareGuessToAnswer(guess);
 		appOutput.textContent = resultMessage;
 		if (resultMessage.includes('Congratulations')) {
-			appButton.disabled = true; // Disable the button after correct guess
-			appInput.disabled = true; // Disable the input field after correct guess
+			appButton.disabled = true;
+			appInput.disabled = true;
 		}
 	}
 };
